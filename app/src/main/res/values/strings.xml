@@ -3,4 +3,5 @@
     <string name="this_is_mainactivity">This is Mainactivity</string>
     <string name="to_camera_activity">To Camera Activity</string>
     <string name="this_is_cameraactivity">This is CameraActivity</string>
+    <string name="string">메인으로</string>
 </resources>
