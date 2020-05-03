@@ -46,7 +46,7 @@ class LaunchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_launch)
-
+        permissionCheck();
         btn_main.setOnClickListener{ // 클릭 이벤트 리스너
             var intent= Intent(this,MainActivity::class.java) // 인텐객체 생성
             startActivity(intent) // 인텐트 전송
