@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -47,10 +48,14 @@ class LaunchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_launch)
         permissionCheck();
+
+        Handler().postDelayed({startActivity(Intent(this,MainActivity::class.java))},2000L)
+        /*
         btn_main.setOnClickListener{ // 클릭 이벤트 리스너
             var intent= Intent(this,MainActivity::class.java) // 인텐객체 생성
             startActivity(intent) // 인텐트 전송
             finish() // 현재 액티비티 종료
         }
+        */
     }
 }
